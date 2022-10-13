@@ -1,0 +1,114 @@
+#include <iostream>
+using namespace std;
+// 1
+//class Counter {
+//public:
+//    int min;
+//    int max;
+//    int currentData;
+//    Counter(int az, int cox) {
+//        min = az;
+//        max = cox;
+//        currentData = min;
+//    }
+//    void SetCurrent(int x) {
+//        currentData = x < max ? x : min;
+//    }
+//    int GetCurrent() {
+//        return currentData;
+//    }
+//    void Increment() {
+//        SetCurrent(currentData + 1);
+//    }
+//};
+
+// 2
+//class Student {
+//    char* name = nullptr;
+//    char* surname = nullptr;
+//    int age = 0;
+//    char* group_no = nullptr;
+//    char* speciality = nullptr;
+//    char* city = nullptr;
+//public:
+//    Student() : name(nullptr), surname(nullptr), age(2), group_no(nullptr), speciality(nullptr), city(nullptr) { }
+//    Student(const char* name) : Student() {
+//        SetName(name);
+//    }
+//    Student(const char* name, const char* surname) : Student(name) {
+//        SetSurname(surname);
+//    }
+//    Student(const char* name, const char* surname, int age) : Student(name, surname) {
+//        SetAge(age);
+//    }
+//    Student(const char* name, const char* surname, int age, const char* group_no) : Student(name, surname, age) {
+//        SetGroup(group_no);
+//    }
+//    Student(const char* name, const char* surname, int age, const char* group_no, const char* speciality) : Student(name, surname, age, group_no) {
+//        SetSpeciality(speciality);
+//    }
+//    Student(const char* name, const char* surname, int age, const char* group_no, const char* speciality, const char* city) : Student(name, surname, age, group_no, speciality) {
+//        SetCity(city);
+//    }
+//    void SetName(const char* name) {
+//        delete[] this->name;
+//        this->name = new char[strlen(name) + 1];
+//        strcpy_s(this->name, strlen(name) + 1, name);
+//    }
+//    void SetSurname(const char* surname) {
+//        delete[] this->surname;
+//        this->surname = new char[strlen(surname) + 1];
+//        strcpy_s(this->surname, strlen(surname) + 1, surname);
+//    }
+//    void SetAge(int age) {
+//        age = this->age;
+//    }
+//    void SetGroup(const char* group_no) {
+//        delete[] this->group_no;
+//        this->group_no = new char[strlen(group_no) + 1];
+//        strcpy_s(this->group_no, strlen(group_no) + 1, group_no);
+//    }
+//    void SetSpeciality(const char* speciality) {
+//        delete[] this->speciality;
+//        this->speciality = new char[strlen(speciality) + 1];
+//        strcpy_s(this->speciality, strlen(speciality) + 1, speciality);
+//    }
+//    void SetCity(const char* city) {
+//        delete[] this->city;
+//        this->city = new char[strlen(city) + 1];
+//        strcpy_s(this->city, strlen(city) + 1, city);
+//    }
+//    const char* GetName() {
+//        return name;
+//    }
+//    const char* GetSurname() {
+//        return surname;
+//    }
+//    int GetAge() {
+//        return age;
+//    }
+//    const char* GetGroup() {
+//        return group_no;
+//    }
+//    const char* GetSpeciality() {
+//        return speciality;
+//    }
+//    const char* GetCity() {
+//        return city;
+//    }
+//    void Print() {
+//        cout << "Name: " << name << endl;
+//        cout << "Surname: " << surname << endl;
+//        cout << "Age: " << age << endl;
+//        cout << "Group: " << group_no << endl;
+//        cout << "Speciality: " << speciality << endl;
+//        cout << "City: " << city << endl;
+//    }
+//    ~Student() {
+//        delete[] name;
+//        delete[] surname;
+//        delete[] group_no;
+//        delete[] speciality;
+//        delete[] city;
+//    }
+//};

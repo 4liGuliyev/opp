@@ -1,0 +1,83 @@
+#include <iostream>
+using namespace std;
+// 1
+//class Fraction{
+//private:
+//public:
+//    int numerator;
+//    int denominator;
+//    Fraction(int num, int den) {
+//        numerator = num; denominator = den;
+//    }
+//    Fraction Multiply(const Fraction& other) {
+//        int num = this->numerator * other.numerator;
+//        int den = this->denominator * other.denominator;
+//        return Fraction(num, den);
+//    }
+//    Fraction Add(const Fraction& other) {
+//        if (this->denominator == other.denominator){
+//            int num = this->numerator + other.numerator;
+//            int den = this->denominator;
+//            return Fraction(num, den);
+//        }
+//        else{
+//            this->numerator *= other.denominator;
+//            int num = other.numerator * this->denominator;
+//            int den = this->denominator * other.denominator;
+//            num = this->numerator + other.numerator;
+//            return Fraction(num, den);
+//        }
+//    }
+//    Fraction Minus(const Fraction& other) {
+//        if (this->denominator == other.denominator){
+//            int num = this->numerator - other.numerator;
+//            int den = this->denominator;
+//            return Fraction(num, den);
+//        }
+//        else{
+//            this->numerator *= other.denominator;
+//            int num = other.numerator * this->denominator;
+//            int den = this->denominator * other.denominator;
+//            num = this->numerator - other.numerator;
+//            return Fraction(num, den);
+//        }
+//    }
+//    Fraction Divide(const Fraction& other) {
+//        int num = this->numerator * other.denominator;
+//        int den = this->denominator * other.numerator;
+//        return Fraction(num, den);
+//    }
+//    void Simplify(const Fraction& other) {
+//        if (this->denominator % this->numerator == 0){
+//            int num = this->numerator / this->numerator;
+//            int den = this->denominator / this->numerator;
+//        }
+//        else{
+//            for (int i = 2; i <= this->numerator; i++){
+//                if (this->numerator % i == 0 && this->denominator % i == 0){
+//                    int num = this->numerator / i;
+//                    int den = this->denominator / i;
+//                }
+//            }
+//        }
+//    }
+//};
+
+// 2
+//class Point {
+//    int x;
+//    int y;
+//public:
+//    int GetX() { return x; }
+//    int GetY() { return y; }
+//    void SetX(int arg) { x = arg; }
+//    void SetY(int arg) { y = arg; }
+//    Point() { x = 0; y = 0; }
+//    Point(int x, int y) {
+//        this->x = x;
+//        this->y = y;
+//    }
+//    void Print() {
+//        cout << "X: " << x << "\n" << "Y: " << y << endl;
+//    }
+//};
